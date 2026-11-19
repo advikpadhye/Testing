@@ -1,0 +1,13 @@
+name: mt-testing-workflow
+on:
+  push:
+jobs:
+  job1:
+    name: Job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step1
+        run: |
+          pwd
+          ls -ltr
+          hostname
